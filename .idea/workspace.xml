@@ -6,6 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="79322485-00d7-412f-b26a-d647702a06c5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cli.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/cli.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,8 +53,9 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/resources" />
+      <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
   <component name="RunManager">
@@ -82,7 +86,7 @@
       <workItem from="1608306725522" duration="15909000" />
       <workItem from="1608334271765" duration="5365000" />
       <workItem from="1608345770827" duration="260000" />
-      <workItem from="1608373962000" duration="18515000" />
+      <workItem from="1608373962000" duration="31560000" />
     </task>
     <servers />
   </component>
