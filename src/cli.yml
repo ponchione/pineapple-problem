@@ -1,0 +1,20 @@
+name: myapp
+version: "1.0"
+author: Mitchell Ponchione
+about: Cash Register exercise for Pineapple Payments
+args:
+  - verbose:
+      short: v
+      long: --verbose
+      multiple: true
+      help: Sets the level of verbosity
+  - divisor:
+      short: d
+      long: --div
+      help: Sets the desired "twist" divisor
+      takes_value: true
+  - INPUT:
+      help: Sets the input file to use
+      required: true
+      index: 1
+      takes_value: true
