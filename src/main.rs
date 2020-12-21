@@ -19,22 +19,25 @@ fn main() {
 //ArgMatches doesn't have an iterator so this is kind of messy...
 fn process_inputs(matches: ArgMatches) { //-> HashMap<&str, String>
     let input = matches.value_of("INPUT").unwrap().to_string();
-    let divisor = if matches.value_of("DIVISOR").is_none() {
-        println!("No divisor supplied, defaulting to a divisor of 3");
-        String::from("3")
-    } else {
-        matches.value_of("DIVISOR").unwrap().to_string()
-    };
+
+    //Code for determining divisor
+    // let divisor = if matches.value_of("DIVISOR").is_none() {
+    //     println!("No divisor supplied, defaulting to a divisor of 3");
+    //     String::from("3")
+    // } else {
+    //     matches.value_of("DIVISOR").unwrap().to_string()
+    // };
 
     let mut args_map = HashMap::new();
     args_map.insert(
         "data_file",
         input
     );
-    args_map.insert(
-        "divisor",
-        divisor
-    );
+
+    // args_map.insert(
+    //     "divisor",
+    //     divisor
+    // );
 
     extract_data(args_map)
     // return args_map;
@@ -58,12 +61,13 @@ fn extract_data(args_map: HashMap<&str, String>) { //-> Vec<(String, String)>
         data.push((owed, paid));
     }
 
-    determine_change(args_map.get("divisor").unwrap(), data)
-    // data
+    // determine_change(args_map.get("divisor").unwrap(), data)
+    determine_change(data)
 }//END
 
 #[allow(unused_variables)] //suppress compiler warning
-fn determine_change(divisor: &String, data: Vec<(String, String)>) { //-> Vec<u32>
+//divisor: &String,
+fn determine_change(data: Vec<(String, String)>) { //-> Vec<u32>
     let mut cents_vec: Vec<u32> = Vec::new();
     for item in data {
         //paid - owed
@@ -78,6 +82,7 @@ fn determine_change(divisor: &String, data: Vec<(String, String)>) { //-> Vec<u3
     }
     // Logic for checking divisor would have probably
     // implemented here on a match {}
+
     minimal_change(cents_vec)
 }//END
 
